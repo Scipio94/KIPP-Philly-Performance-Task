@@ -22,7 +22,7 @@ SELECT
     WHEN AttendanceCode NOT IN ('P','ET','UT') THEN 0 -- 0 Absent
     END AS ADA_Calc
 FROM `single-being-353600.KIPP_Philly_Performance_Task.KIPP_Philly_Attendance_14_15` AS a 
-INNER JOIN `single-being-353600.KIPP_Philly_Performance_Task.Current_Students` AS e -- Returning mutual values between both tables
+INNER JOIN `single-being-353600.KIPP_Philly_Performance_Task.Current_Students` AS e 
  ON a.StudentID = e.ID;
 
 /*Fining ADA By School and Grade Level*/
